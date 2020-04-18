@@ -3,10 +3,10 @@ import { truncate } from './vue-filter-truncate';
 
 const test = ava as TestInterface<{}>;
 
-const macro = (t, input: string, length: number, expected: string) => {
-  t.is(truncate(input, config), expected);
-};
+test('This is sample => This is sample', t => {
+  t.is(truncate('This is sample', 20), 'This is sample');
+});
 
-test('This is sample => This is sample', macro, 'This is sample', 20, 'This is sample');
-
-test('This is sample => This …', macro, 'This is sample', 4, 'This …');
+test('This is sample => This …', t => {
+  t.is(truncate('This is sample', 4), 'This …');
+});

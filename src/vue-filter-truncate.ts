@@ -6,7 +6,7 @@ export function truncate(input: string, length: number): string {
     return input;
   }
 
-  return `${input.substr(0, length)}…`;
+  return `${input.substr(0, length)} …`;
 }
 
 export default {

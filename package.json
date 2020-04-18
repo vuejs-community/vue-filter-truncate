@@ -25,15 +25,24 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:cjs": "rollup --config rollup.config.js --format cjs --file dist/vue-filter-truncate.cjs.js",
     "build:esm": "rollup --config rollup.config.js --format esm --file dist/vue-filter-truncate.esm.js",
-    "lint": "tslint -p tsconfig.json -c tslint.json"
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "ava"
   },
   "devDependencies": {
+    "@ava/typescript": "^1.1.1",
     "@rollup/plugin-json": "^4.0.2",
+    "@vue/test-utils": "^1.0.0-beta.32",
     "@wessberg/rollup-plugin-ts": "^1.2.21",
+    "ava": "^3.5.0",
+    "jsdom": "^16.2.1",
+    "jsdom-global": "^3.0.2",
     "rollup": "^2.1.0",
+    "ts-node": "^8.7.0",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11",
+    "wallaby-vue-compiler": "^1.0.6"
   },
   "peerDependencies": {
     "vue": "^2.0.0"

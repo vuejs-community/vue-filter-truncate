@@ -1,12 +1,12 @@
 {
-  "name": "vue-filter-truncate",
+  "name": "@vuejs-community/vue-filter-truncate",
   "description": "Simple truncate filter for Vue.js",
   "keywords": [
     "vue",
     "vue-filter"
   ],
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Eduard Nikolenko <mail@eduardnikolenko.com>",
   "repository": {
     "type": "git",

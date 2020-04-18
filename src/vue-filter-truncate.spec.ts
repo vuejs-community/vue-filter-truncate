@@ -9,4 +9,4 @@ const macro = (t, input: string, length: number, expected: string) => {
 
 test('This is sample => This is sample', macro, 'This is sample', 20, 'This is sample');
 
-test('This is sample => This …', macro, 'This is sample', 3, 'This …');
+test('This is sample => This …', macro, 'This is sample', 4, 'This …');

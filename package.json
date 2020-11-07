@@ -6,15 +6,18 @@
     "vue-filter"
   ],
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Ed Nikolenko <4426698+ednikolenko@users.noreply.github.com>",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.esm.d.ts",
   "files": [
     "dist/index.cjs.d.ts",
     "dist/index.cjs.js",
     "dist/index.esm.d.ts",
-    "dist/index.esm.js"
+    "dist/index.esm.js",
+    "dist/index.umd.d.ts",
+    "dist/index.umd.js"
   ],
   "repository": {
     "type": "git",

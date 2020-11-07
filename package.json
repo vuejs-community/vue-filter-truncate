@@ -16,7 +16,9 @@
     "dist/vue-filter-truncate.cjs.d.ts",
     "dist/vue-filter-truncate.cjs.js",
     "dist/vue-filter-truncate.esm.d.ts",
-    "dist/vue-filter-truncate.esm.js"
+    "dist/vue-filter-truncate.esm.js",
+    "dist/vue-filter-truncate.umd.d.ts",
+    "dist/vue-filter-truncate.umd.js"
   ],
   "main": "dist/vue-filter-truncate.cjs.js",
   "module": "dist/vue-filter-truncate.esm.js",

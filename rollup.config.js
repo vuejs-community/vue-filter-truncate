@@ -15,6 +15,13 @@ export default {
       file: 'dist/vue-filter-truncate.cjs.js',
       format: 'commonjs',
       sourcemap: true
+    },
+    {
+      exports: 'named',
+      file: 'dist/vue-filter-truncate.umd.js',
+      format: 'umd',
+      name: 'VueFilterDateFormat',
+      sourcemap: true
     }
   ],
   plugins: [

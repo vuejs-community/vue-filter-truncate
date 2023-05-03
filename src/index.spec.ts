@@ -1,13 +1,17 @@
-import ava, { TestInterface } from 'ava';
+import { describe, expect, it } from 'vitest';
 
-import { truncate } from './index';
+import { truncate } from './index.ts';
 
-const test = ava as TestInterface<{}>;
+describe('truncate', () => {
+  it('This is sample => This is sample', () => {
+    const truncateString = truncate('This is sample', 20);
 
-test('This is sample => This is sample', (t) => {
-  t.is(truncate('This is sample', 20), 'This is sample');
-});
+    expect(truncateString).toBe('This is sample');
+  });
 
-test('This is sample => This …', (t) => {
-  t.is(truncate('This is sample', 4), 'This …');
+  it('This is sample => This …', () => {
+    const truncateString = truncate('This is sample', 4);
+
+    expect(truncateString).toBe('This …');
+  });
 });

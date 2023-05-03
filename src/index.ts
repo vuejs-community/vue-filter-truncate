@@ -1,6 +1,6 @@
-import { VueConstructor } from 'vue';
-
-import { version } from '../package.json';
+type VueConstructor = {
+  filter(id: string, definition?: Function): Function;
+};
 
 export function truncate(input: string, length: number): string {
   if (input.length <= length) {
@@ -13,6 +13,5 @@ export function truncate(input: string, length: number): string {
 export default {
   install(Vue: VueConstructor): void {
     Vue.filter('truncate', truncate);
-  },
-  version
+  }
 };
